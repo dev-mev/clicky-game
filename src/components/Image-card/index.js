@@ -4,7 +4,9 @@ function ImageCard(props) {
   const image = props.image;
 
   return (
-    <img alt={image.alt} src={image.source} />
+    <button onClick={ () => props.imageClicked(image) }>
+      <img alt={image.alt} src={image.source} className="image-card" />
+    </button>
   );
 }
 

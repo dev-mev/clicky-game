@@ -6,13 +6,13 @@ function ImageCardContainer(props) {
 
   props.images.forEach((image) => {
     images.push(
-      <ImageCard image={image} />
+      <ImageCard image={image} imageClicked={props.imageClicked} />
     )
   })
   return (
     <div>
       {images}
-  </div>
+    </div>
   )
 }
 
