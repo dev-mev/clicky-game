@@ -15,8 +15,7 @@ class App extends React.Component {
     this.setState({ score: 0 });
     this.setState({ clickMessage: ""});
     for (const image of images) {
-        image.clicked = false;
-        console.log(image.clicked);
+      image.clicked = false;
     }
   }
 

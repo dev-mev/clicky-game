@@ -1,10 +1,19 @@
 body{
-  background-image: url("/images/scales-1972344_1920.jpg");
+  background-image: url("/images/rawpixel-577494-unsplash.jpg");
 }
 
 .navbar{
   background-color: #f1f1f1;
-  margin-bottom: 20px;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.nav-item{
+  font-size: 175%;
+}
+
+.click-message{
+  color: blueviolet;
 }
 
 .image-card {

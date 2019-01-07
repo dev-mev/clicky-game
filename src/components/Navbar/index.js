@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 function Navbar(props) {
   return (
     <nav className="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-      <Link className="navbar-brand d-flex w-50 mr-auto" to="/">
-        Clicky Game
+      <Link className="navbar-brand d-flex w-50 mr-auto nav-item" to="/">
+        <h3>Clicky Game</h3>
       </Link>
      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="nav navbar-nav ml-auto w-100 justify-content-left">
-        <li className="instructions">
-          <a className="nav-link" href="#">Instructions</a>
-        </li>
-      </ul>
+
       <ul className="navbar-nav w-100">
-        <li className="click-message">
+        <li className="nav-item click-message">
             {props.clickMessage}
         </li>
       </ul>
       <ul className="nav navbar-nav ml-auto w-100 justify-content-end">
-        <li className="score">
+        <li className="nav-item">
           Score: {props.score} | High Score: {props.highScore}
         </li>
       </ul>
      </div>
     </nav>
+
+
   );
 }
+
+
 
 export default Navbar;
