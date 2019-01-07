@@ -1,9 +1,25 @@
+body{
+  background-image: url("/images/scales-1972344_1920.jpg");
+}
+
+.navbar{
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
 .image-card {
-  background-size: cover;
-  background-position: 50%;
   border: 5px solid #f1f1f1;
   border-radius: 3px;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
   box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
   cursor: pointer;
+}
+
+.image {
+  flex-basis: 21%;
+}
+
+.image-container {
+  margin-left: 20%;
+  margin-right: 20%;
 }

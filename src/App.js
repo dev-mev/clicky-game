@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
 import ImageCardContainer from "./components/Image-card-container";
 import images from "./data/images.json";
@@ -12,10 +11,25 @@ class App extends React.Component {
     highScore: 0
   }
 
+  currentGameReset = () => {
+    this.setState({ score: 0 });
+    this.setState({ clickMessage: ""});
+    for (const image of images) {
+        image.clicked = false;
+        console.log(image.clicked);
+    }
+  }
+
   handleImageClick = image => {
-    if (!image.clicked) {
+    if (!image.clicked || image.clicked === false) {
       image.clicked = true;
       this.setState({ score: this.state.score + 1 });
+      this.setState({ clickMessage: "Good Click!" });
+      if (this.state.highScore <= this.state.score) {
+        this.setState({ highScore: this.state.highScore + 1})
+      }
+    } else {
+      this.currentGameReset();
     }
   }
 
@@ -23,8 +37,7 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Navbar score={this.state.score} highScore={this.state.highScore}/>
-          <Jumbotron />
+          <Navbar clickMessage={this.state.clickMessage} score={this.state.score} highScore={this.state.highScore}/>
           <ImageCardContainer images={images} imageClicked={this.handleImageClick}/>
         </div>
       </Router>
