@@ -1,14 +1,14 @@
 [
-    {"alt": "Flower", "source": "/images/flower(1).jpg"},
-    {"alt": "Flower", "source": "/images/flower(2).jpg"},
-    {"alt": "Flower", "source": "/images/flower(3).jpg"},
-    {"alt": "Flower", "source": "/images/flower(4).jpg"},
-    {"alt": "Flower", "source": "/images/flower(5).jpg"},
-    {"alt": "Flower", "source": "/images/flower(6).jpg"},
-    {"alt": "Flower", "source": "/images/flower(7).jpg"},
-    {"alt": "Flower", "source": "/images/flower(8).jpg"},
-    {"alt": "Flower", "source": "/images/flower(9).jpg"},
-    {"alt": "Flower", "source": "/images/flower(10).jpg"},
-    {"alt": "Flower", "source": "/images/flower(11).jpg"},
-    {"alt": "Flower", "source": "/images/flower(12).jpg"}
+    {"alt": "Flower", "source": "images/flower(1).jpg"},
+    {"alt": "Flower", "source": "images/flower(2).jpg"},
+    {"alt": "Flower", "source": "images/flower(3).jpg"},
+    {"alt": "Flower", "source": "images/flower(4).jpg"},
+    {"alt": "Flower", "source": "images/flower(5).jpg"},
+    {"alt": "Flower", "source": "images/flower(6).jpg"},
+    {"alt": "Flower", "source": "images/flower(7).jpg"},
+    {"alt": "Flower", "source": "images/flower(8).jpg"},
+    {"alt": "Flower", "source": "images/flower(9).jpg"},
+    {"alt": "Flower", "source": "images/flower(10).jpg"},
+    {"alt": "Flower", "source": "images/flower(11).jpg"},
+    {"alt": "Flower", "source": "images/flower(12).jpg"}
 ]
