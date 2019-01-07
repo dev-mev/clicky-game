@@ -1,0 +1,34 @@
+body{
+  background-image: url("../images/rawpixel-577494-unsplash.jpg");
+}
+
+.navbar{
+  background-color: #f1f1f1;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.nav-item{
+  font-size: 175%;
+}
+
+.click-message{
+  color: blueviolet;
+}
+
+.image-card {
+  border: 5px solid #f1f1f1;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+  cursor: pointer;
+}
+
+.image {
+  flex-basis: 21%;
+}
+
+.image-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
