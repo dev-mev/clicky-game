@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Navbar(props) {
   return (
     <nav className="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-      <Link className="navbar-brand d-flex w-50 mr-auto nav-item" to="/">
+      <div className="navbar-brand d-flex w-50 mr-auto nav-item">
         <h3>Clicky Game</h3>
-      </Link>
+      </div>
      <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
       <ul className="navbar-nav w-100">
