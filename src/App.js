@@ -12,8 +12,10 @@ class App extends React.Component {
   }
 
   currentGameReset = () => {
-    this.setState({ score: 0 });
-    this.setState({ clickMessage: ""});
+    this.setState({
+      score: 0,
+      clickMessage: ""
+    });
     for (const image of images) {
       image.clicked = false;
     }
@@ -22,11 +24,11 @@ class App extends React.Component {
   handleImageClick = image => {
     if (!image.clicked || image.clicked === false) {
       image.clicked = true;
-      this.setState({ score: this.state.score + 1 });
-      this.setState({ clickMessage: "Good Click!" });
-      if (this.state.highScore <= this.state.score) {
-        this.setState({ highScore: this.state.highScore + 1})
-      }
+      this.setState({
+        score: this.state.score + 1,
+        clickMessage: "Good click!",
+        highScore: Math.max(this.state.score + 1, this.state.highScore)
+      })
     } else {
       this.currentGameReset();
     }
